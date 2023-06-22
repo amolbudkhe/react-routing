@@ -17,10 +17,6 @@ export async function addEventAction({ request, params }) {
     description: data.get("description"),
   };
 
-  console.log("00000");
-  console.log(JSON.stringify(eventData));
-  console.log("111111");
-
   const response = await fetch("http://localhost:8080/events", {
     method: "POST",
     headers: {
@@ -28,6 +24,10 @@ export async function addEventAction({ request, params }) {
     },
     body: JSON.stringify(eventData),
   });
+
+  if (response.status === 422) {
+    return response;
+  }
 
   if (!response.ok) {
     throw json({ message: "Could not save new event." }, { status: 500 });
