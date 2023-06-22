@@ -1,6 +1,13 @@
 {
   "events": [
     {
+      "title": "New Year Party",
+      "image": "https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_1316/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1638874314%2Fxvcnnroymxagbjxdpcyw.jpg",
+      "date": "2023-12-31",
+      "description": "Let welcome 2024 together",
+      "id": "8a3503c6-eddb-40d4-be56-21605587824c"
+    },
+    {
       "id": "e1",
       "title": "A dummy event",
       "date": "2023-02-22",
